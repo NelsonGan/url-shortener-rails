@@ -35,7 +35,7 @@ class LinksController < ApplicationController
     @link.save
 
     if Rails.env.production?
-      location = request.location.country
+      location = request.location.city
     else
       location = "Kuala Lumpur"
     end
