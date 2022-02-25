@@ -34,9 +34,15 @@ class LinksController < ApplicationController
     @link.clicks += 1
     @link.save
 
+    if Rails.env.production?
+      location = request.location.country
+    else
+      location = "Kuala Lumpur"
+    end
+
     VisitHistory.create(
       link: @link,
-      geolocation: "Kuala Lumpur"
+      geolocation: location
     )
 
     redirect_to @link.target_url, allow_other_host: true

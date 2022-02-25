@@ -22,12 +22,12 @@
         <div class="relative">
           <div class="sm:text-center">
             <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Shorten your URL with one click</h2>
-            <p class="mt-6 mx-auto max-w-2xl text-lg text-green-200">No one enjoy typing <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-xs underline">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a> to the search bar</p>
+            <p class="mt-6 mx-auto max-w-2xl text-lg text-green-200">No one enjoy typing <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-xs underline">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a> to the search bar</p>
           </div>
           <%= form_with model: @link, class: "mt-12 sm:mx-auto sm:max-w-lg sm:flex" do |form| %>
             <div class="min-w-0 flex-1">
               <%= form.label :target_url, "URL", class: "sr-only" %>
-              <%= form.text_field :target_url, placeholder: "Enter your link here", class: "block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600" %>
+              <%= form.text_field :target_url, required: true, placeholder: "Enter your link here", class: "block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600" %>
             </div>
             <div class="mt-4 sm:mt-0 sm:ml-3">
               <%= form.submit "Shorten", class: "block w-full rounded-md border border-transparent px-5 py-3 bg-green-500 text-base font-medium text-white shadow hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600 sm:px-10 cursor-pointer" %>
