@@ -5,6 +5,6 @@ class Link < ApplicationRecord
   validates :target_url, presence: true, url:true
 
   def generate_short_link
-    "https://localhost:3000/s/#{slug}"
+    "https://#{Rails.application.secrets.host}/s/#{slug}"
   end
 end
