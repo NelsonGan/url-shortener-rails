@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: url_shortener_development
+  pool: 5
+  username: nelson
+  password:
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: url_shortener_test
+  pool: 5
+  username: nelson
+  password:
+  timeout: 5000
