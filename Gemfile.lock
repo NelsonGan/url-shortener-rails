@@ -252,6 +252,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   pg
+  public_suffix
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.2)
   rails-controller-testing

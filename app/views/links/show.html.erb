@@ -7,7 +7,7 @@
           Your link has been clicked <%= @link.clicks %> time(s). Track the originating geolocation and timestamp of each visit to your shortened link with the table below.
         </p>
         <p class="mt-4 max-w-3xl text-lg text-green-100">
-          Original link is <a href="<%= @link.target_url %>" class="text-base underline"><%= @link.target_url %></a> with the
+          Your original link is <a target="_blank" href="<%= @link.target_url %>" class="text-base underline"><%= @link.target_url %></a> with the
           title tag of "<%= @title %>".
         </p>
       </div>
