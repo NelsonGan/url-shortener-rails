@@ -3,11 +3,12 @@ Rails.application.routes.draw do
   match "/404", to: "errors#not_found", via: :all
   match "/500", to: "errors#internal_server_error", via: :all
 
-  # Pages
+  # Root
   root 'home#index'
-  get 'link/:id', to: 'links#show', as: 'link'
 
-  # Create link
+  # Links
+  get 'links', to: 'links#index'
+  get 'link/:id', to: 'links#show', as: 'link'
   post '/links', to: 'links#create'
 
   # Short link (Slug)

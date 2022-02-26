@@ -2,6 +2,11 @@ require 'nokogiri'
 require 'open-uri'
 
 class LinksController < ApplicationController
+  def index
+    @links = Link.all
+    @visit_histories_count = VisitHistory.all.count
+  end
+
   def show
     @link = Link.find(params[:id])
 

@@ -8,7 +8,11 @@ class Link < ApplicationRecord
   validates :target_url, presence: true, url:true
 
   def generate_short_link
-    "https://#{Rails.application.secrets.host}/s/#{slug}"
+    if Rails.env.production?
+      "https://#{Rails.application.secrets.host}/s/#{slug}"
+    else
+      "http://#{Rails.application.secrets.host}/s/#{slug}"
+    end
   end
 
   private

@@ -18,14 +18,6 @@ RSpec.describe Link, type: :model do
     expect(link.valid?).to be(false)
   end
 
-  it "is invalid if target url is not present" do
-    link = Link.new(
-      slug: "1234567"
-    )
-
-    expect(link.valid?).to be(false)
-  end
-
   it "is invalid if slug is not unique" do
     link = Link.new(
       target_url: "https://www.coingecko.com",
@@ -41,7 +33,7 @@ RSpec.describe Link, type: :model do
     expect(link2.valid?).to be(false)
   end
 
-  it "is invalid if url is not formatted" do
+  it "is invalid if url is not formatted properly" do
     link = Link.new(
       target_url: "coingecko",
       slug: "1234567"
