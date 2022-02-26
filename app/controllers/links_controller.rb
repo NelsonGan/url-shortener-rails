@@ -42,7 +42,7 @@ class LinksController < ApplicationController
     if Rails.env.production?
       location = "#{request.location.city}, #{request.location.country}"
     else
-      location = "Kuala Lumpur, SG"
+      location = "Kuala Lumpur"
     end
 
     VisitHistory.create(
