@@ -3,13 +3,14 @@ require 'open-uri'
 
 class LinksController < ApplicationController
   def index
-    @links = Link.all
+    @links = Link.order('clicks DESC').all
     @visit_histories_count = VisitHistory.all.count
   end
 
   def show
     @link = Link.find(params[:id])
 
+    # Get the title of target URL
     begin
       @title = Nokogiri::HTML.parse(URI.open(@link.target_url)).title
     rescue
@@ -35,10 +36,11 @@ class LinksController < ApplicationController
   def shorten
     @link = Link.find_by(slug: params[:slug])
 
-    # TODO: Perform record tracking
+    # Track every clicks
     @link.clicks += 1
     @link.save
 
+    # Get geolocation in production
     if Rails.env.production?
       location = "#{request.location.city}, #{request.location.country}"
     else

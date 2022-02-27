@@ -34,7 +34,7 @@
                 <% @link.visit_histories.each do |v| %>
                   <tr>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><%= v.geolocation %></td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><%= v.created_at %></td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><%= v.created_at.localtime.strftime '%Y-%m-%d %H:%M:%S' %></td>
                   </tr>
                 <% end.empty? and begin %>
                   <tr>

@@ -1,7 +1,7 @@
 class Shortener
   attr_reader :url, :link_model
 
-  # Accept link model for Dependency Injection
+  # Accept link model via dependency injection
   def initialize(url, link_model = Link)
     @url = url
     @link_model = link_model
