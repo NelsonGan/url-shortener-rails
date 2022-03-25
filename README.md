@@ -3,7 +3,7 @@
 This application can shorten any valid urls, similar to bit.ly and tinyurl.com. The application is built with Ruby on Rails and the DBMS used is PostgreSQL.
  
 ### Deployed URL
-The application is deployed with heroku (https://cgiv.herokuapp.com/).
+The application is deployed with heroku (https://url-shortener-with-rails.herokuapp.com/).
 
 ### Installation Guide
 1. Make sure that you have Rails and PostgreSQL installed.
