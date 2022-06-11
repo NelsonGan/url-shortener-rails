@@ -20,7 +20,7 @@ The testing suite used is RSpec (https://rspec.info). There are a total of 12 te
 - Public Suffix (https://github.com/weppos/publicsuffix-ruby) - to validate url domain
 
 ### UI Components
-Most ui components used in the application is taken from https://tailwindui.com.
+Most ui components used in the application are taken from https://tailwindui.com.
 
 ### Pages
 #### Home
