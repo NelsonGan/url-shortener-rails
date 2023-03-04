@@ -4,8 +4,8 @@ This application shortens URLs, similar to well-known service bit.ly, and includ
 ## Tech Stack
 The web application was built with RubyOnRails, while the DBMS used is PostgreSQL.
  
-## Deployed URL
-The application is deployed with heroku (https://url-shortener-with-rails.herokuapp.com/).
+## Deployed URL (Heroku)
+https://url-shortener-with-rails.herokuapp.com/
 
 ## Installation Guide
 1. Make sure that you have Rails and PostgreSQL installed.
