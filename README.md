@@ -1,5 +1,8 @@
 ## Description
-This application can shorten any valid urls, similar to bit.ly and tinyurl.com. The application is built with Ruby on Rails and the DBMS used is PostgreSQL.
+This application shortens URLs, similar to well-known service bit.ly, and includes a web dashboard for users to track click activity for each shortened URL. This project showcased my proficiency in full-stack web development, including designing and implementing a user-friendly interface.
+
+## Tech Stack
+The web application was built with RubyOnRails, while the DBMS used is PostgreSQL.
  
 ## Deployed URL
 The application is deployed with heroku (https://url-shortener-with-rails.herokuapp.com/).
