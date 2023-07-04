@@ -1,8 +1,8 @@
 ## Description
-This application shortens URLs, similar to well-known service bit.ly, and includes a web dashboard for users to track click activity for each shortened URL. This project showcased my proficiency in full-stack web development, including designing and implementing a user-friendly interface.
+URL Shortener shortens URLs, similar to what bit.ly does, and includes a web dashboard for users to track click activity for each shortened URL. This project showcased my proficiency in full-stack web development, including designing and implementing a user-friendly interface.
 
 ## Tech Stack
-The web application was built with RubyOnRails, while the DBMS used is PostgreSQL.
+The web application is built with RubyOnRails and the DBMS used is PostgreSQL.
  
 ## Deployed URL (Heroku)
 https://url-shortener-with-rails.herokuapp.com/
